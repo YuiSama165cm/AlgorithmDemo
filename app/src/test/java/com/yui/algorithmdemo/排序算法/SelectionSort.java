@@ -9,26 +9,29 @@ import org.junit.Test;
  *      In-place √
  *      稳定性 √
  * */
-public class SelectionSort {
+public class SelectionSort extends Sort{
     @Test
     public void SelectionSort(){
-        Integer[] arr = {5,3,7,8,11,1,2,11};
-        SelectionSort(arr);
 
     }
 
-    public void SelectionSort(Integer[] array){
+    @Override
+    protected void sort() {
         for(int end = array.length - 1;end > 0;end--){
             int maxIndex = 0;
             for(int begin = 1;begin <= end;begin++){
-                if(array[begin]>=array[maxIndex]){//这样就保证了稳定，相同大小元素前后位置不变
+//                if(array[begin]>=array[maxIndex]){//这样就保证了稳定，相同大小元素前后位置不变
+//                    maxIndex = begin;
+//                }
+                if(cmp(maxIndex,begin)<=0){//这样就保证了稳定，相同大小元素前后位置不变
                     maxIndex = begin;
                 }
             }
             if(maxIndex!=end) {//防止是同一个
-                array[maxIndex] = array[end] + array[maxIndex];
-                array[end] = array[maxIndex] - array[end];
-                array[maxIndex] = array[maxIndex] - array[end];
+                swap(maxIndex,end);
+//                array[maxIndex] = array[end] + array[maxIndex];
+//                array[end] = array[maxIndex] - array[end];
+//                array[maxIndex] = array[maxIndex] - array[end];
             }
         }
 

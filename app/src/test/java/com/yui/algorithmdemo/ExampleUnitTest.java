@@ -34,7 +34,7 @@ public class ExampleUnitTest {
         heap.add(20);
 
         for (int i = 0; i < heap.size(); i++) {
-            System.out.print();
+//            System.out.print();
         }
     }
 
