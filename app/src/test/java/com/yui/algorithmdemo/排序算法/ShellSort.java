@@ -1,4 +1,4 @@
-package com.yui.algorithmdemo.sort;
+package com.yui.algorithmdemo.排序算法;
 /**
  * 希尔排序
  *      时间复杂度：最好 O(n) 最坏 O(n^(4/3)) 平均 取决于步长序列

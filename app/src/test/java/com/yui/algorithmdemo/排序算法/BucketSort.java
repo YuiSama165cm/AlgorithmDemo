@@ -1,4 +1,4 @@
-package com.yui.algorithmdemo.sort;
+package com.yui.algorithmdemo.排序算法;
 /**
  * 桶排序
  *      时间复杂度：最好 O(n+k) 最坏 O(n+k) 平均 O(n+k)

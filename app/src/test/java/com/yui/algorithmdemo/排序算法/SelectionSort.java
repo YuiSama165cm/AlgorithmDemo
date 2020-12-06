@@ -1,4 +1,4 @@
-package com.yui.algorithmdemo.sort;
+package com.yui.algorithmdemo.排序算法;
 
 import org.junit.Test;
 
