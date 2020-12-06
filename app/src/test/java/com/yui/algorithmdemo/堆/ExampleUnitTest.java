@@ -1,12 +1,6 @@
-package com.yui.algorithmdemo;
-
-import com.yui.algorithmdemo.堆.BinaryHeap;
+package com.yui.algorithmdemo.堆;
 
 import org.junit.Test;
-
-import java.util.Comparator;
-
-import static org.junit.Assert.*;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -34,7 +28,7 @@ public class ExampleUnitTest {
         heap.add(20);
 
         for (int i = 0; i < heap.size(); i++) {
-            System.out.print();
+//            System.out.print();
         }
     }
 
